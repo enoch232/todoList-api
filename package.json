@@ -1,0 +1,27 @@
+{
+  "name": "todolist",
+  "version": "1.0.0",
+  "description": "API for TodoList",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enoch232/ToDoList.git"
+  },
+  "author": "Enoch Ko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/enoch232/ToDoList/issues"
+  },
+  "homepage": "https://github.com/enoch232/ToDoList#readme",
+  "dependencies": {
+    "express": "^4.13.4",
+    "mongoose": "^4.4.19",
+    "body-parser": "*"
+  },
+  "engines": {
+    "node": "4.1.1"
+  }
+}
