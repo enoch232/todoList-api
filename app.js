@@ -7,6 +7,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 mongoose.connect("mongodb://testuser:1234567890@ds013898.mlab.com:13898/todoapp")
 var db = mongoose.connection;
 Todo = require('./models/todo');
+var port = process.env.PORT || 3000;
 app.get('/api/todos', function(req, res){
 	Todo.getTodos(function(err, todos){
 		if (err){
@@ -49,5 +50,5 @@ app.delete('/api/todos/:_id', function(req, res){
 	});
 
 });
-app.listen(3000);
-console.log("Server now running at port 3000...");
+app.listen(port);
+console.log("Server is now running at port "+port);
